@@ -15,7 +15,7 @@ def add_name_to_node(name)
   hash
 end
 
-def array(hash)
+def array_of_array(hash)
   array = []
   hash.reduce(nil) do |memo, (key, value)|
     array << value
@@ -29,6 +29,7 @@ def nyc_pigeon_organizer(data)
   array = []
   i = 0
   while i < data.size do
-
+    array << array_of_array(data[i])
+    i += 1
   end
 end
