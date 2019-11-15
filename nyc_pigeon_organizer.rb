@@ -29,6 +29,6 @@ def nyc_pigeon_organizer(data)
   array = []
   i = 0
   while i < data.size do
-    
+
   end
 end
