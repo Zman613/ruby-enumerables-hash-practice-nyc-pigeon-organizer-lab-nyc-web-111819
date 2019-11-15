@@ -15,10 +15,18 @@ def add_name_to_node(name)
   hash
 end
 
-
+def array(hash)
+  array = []
+  hash.reduce(nil) do |memo, (key, value)|
+    array << value
+  end
+  array
+end
 
 def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_list = {}
-
+  i = 0
+  data
+  end
 end
