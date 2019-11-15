@@ -26,10 +26,15 @@ end
 def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_list = {}
-  array = []
-  i = 0
-  while i < data.size do
-    array << array_of_array(data[i])
-    i += 1
+  data.each do |cgl, value|
+    value.each do |info, names|
+      names.each do |name|
+        if pigeon_list[name]!
+        pigeon_list[name] = {}
+        end
+        pigeon_list[name][cgl] = info.to_s
+      end
+    end
   end
+  pigeon_list
 end
