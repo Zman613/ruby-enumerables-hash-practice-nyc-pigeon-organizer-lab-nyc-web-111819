@@ -30,6 +30,9 @@ def nyc_pigeon_organizer(data)
     value.each do |info, names|
       names.each do |name|
         if pigeon_list[name] == nil
+          pigeon_list[name] = {}
+        end
+        if pigeon_list[name][cgl] == nil
           pigeon_list[name][cgl] = []
         end
         pigeon_list[name][cgl].push(info.to_s)
