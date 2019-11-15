@@ -29,7 +29,7 @@ def nyc_pigeon_organizer(data)
   data.each do |cgl, value|
     value.each do |info, names|
       names.each do |name|
-        if pigeon_list[name]!
+        if !pigeon_list[name]
         pigeon_list[name] = {}
         end
         pigeon_list[name][cgl] = info.to_s
