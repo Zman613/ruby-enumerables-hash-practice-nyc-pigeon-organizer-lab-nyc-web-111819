@@ -26,7 +26,9 @@ end
 def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_list = {}
+  array = []
   i = 0
-  data
+  while i < data.size do
+    
   end
 end
