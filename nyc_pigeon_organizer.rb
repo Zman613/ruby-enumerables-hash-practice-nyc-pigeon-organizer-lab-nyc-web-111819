@@ -32,7 +32,7 @@ def nyc_pigeon_organizer(data)
         if pigeon_list[name] == nil
         pigeon_list << add_name_to_node(name)
         end
-        pigeon_list[name][cgl] = [info].to_s
+        pigeon_list[name][cgl] = info.to_s
       end
     end
   end
